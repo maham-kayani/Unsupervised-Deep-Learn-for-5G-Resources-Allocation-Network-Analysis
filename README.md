@@ -29,6 +29,8 @@ it can automatically spot and flag unusual resource allocation problems.
 * **Precision (90%):** 
 * **Recall (97%):** 
 * **F1-Score (93%):**
+
+  
 Performance Summary: The model achieves 98% accuracy in mapping correct bandwidth distributions alongside a 90% precision and 97% recall, resulting in a 93% F1-score that effectively minimizes false alarms while catching real anomalies.
 
 Practical Impact: This balanced performance allows the autoencoder to reliably identify when a network behaves unfairly by assigning the wrong bandwidth for a given signal strength.
