@@ -11,7 +11,7 @@ it can automatically spot and flag unusual resource allocation problems.
 ---
 
 ## 🛠️ Data Preprocessing
-* **Feature Extraction & Selection:** Guided by domain knowledge and Shannon entropy, high-entropy features (`Signal_Strength`, `Required_Bandwidth`, and `Allocated_Bandwidth`) were selected while dropping unnecessary identifiers[cite: 1].
+* **Feature Extraction & Selection:** Guided by domain knowledge and Shannon entropy, high-entropy features (`Signal_Strength`, `Required_Bandwidth`, and `Allocated_Bandwidth`) were selected while dropping unnecessary identifiers.
 * **Data Cleaning:** Converted numerical columns from string formats (e.g., removing `dBm`, `Mbps`, `%`) into proper float formats for mathematical processing[cite: 1].
 * **Normalization:** Applied `StandardScaler` to scale the selected features, ensuring the autoencoder processes balanced inputs[cite: 1].
 
