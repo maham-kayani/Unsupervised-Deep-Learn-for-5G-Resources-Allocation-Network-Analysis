@@ -18,7 +18,7 @@ it can automatically spot and flag unusual resource allocation problems.
 ---
 
 ## 🤖 Model Architecture & Training
-* **Baseline Clustering:** Utilized K-Means clustering ($K=3$, determined via the Elbow Method and Silhouette scores) to segment network states, using Cluster 1 as the normal baseline[cite: 1].
+* **Baseline Clustering:** Utilized K-Means clustering ($K=3$, determined via the Elbow Method and Silhouette scores) to segment network states, using Cluster 1 as the normal baseline.
 * **FeedForward Autoencoder:** Trained exclusively on normal network patterns (Cluster 1) to learn efficient data reconstruction.
 * **Decoder Activation:** We recommend using a **Linear activation** instead of **Sigmoid**. Why? Because we scaled our data using `StandardScaler`, which creates negative numbers. Since Sigmoid only works for values between 0 and 1, it would clip our negative values. Linear activation lets the model output any number without cutting off our negative data!
 
