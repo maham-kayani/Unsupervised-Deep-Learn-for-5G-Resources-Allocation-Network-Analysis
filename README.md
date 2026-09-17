@@ -37,4 +37,4 @@ Practical Impact: This balanced performance allows the autoencoder to reliably i
 ---
 
 ## 📚 Publication & Article
-* Want to read more about how we built this? Check out the full article here: [Unsupervised Deep Learning for Behavioral and Quality Anomaly Detection in 5G Networks: Early Methods and Challenges]
+* Want to read more about how we built this? Check out the full article here: [https://www.researchgate.net/publication/397086523_Unsupervised_Deep_Learning_for_Behavioral_and_Quality_Anomaly_Detection_in_5G_Networks_Early_Methods_and_Challenges]
