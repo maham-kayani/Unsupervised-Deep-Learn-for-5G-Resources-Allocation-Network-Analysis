@@ -19,17 +19,19 @@ it can automatically spot and flag unusual resource allocation problems.
 
 ## 🤖 Model Architecture & Training
 * **Baseline Clustering:** Utilized K-Means clustering ($K=3$, determined via the Elbow Method and Silhouette scores) to segment network states, using Cluster 1 as the normal baseline[cite: 1].
-* **FeedForward Autoencoder:** Trained exclusively on normal network patterns (Cluster 1) to learn efficient data reconstruction[cite: 1].
+* **FeedForward Autoencoder:** Trained exclusively on normal network patterns (Cluster 1) to learn efficient data reconstruction.
 * **Decoder Activation:** We recommend using a **Linear activation** instead of **Sigmoid**. Why? Because we scaled our data using `StandardScaler`, which creates negative numbers. Since Sigmoid only works for values between 0 and 1, it would clip our negative values. Linear activation lets the model output any number without cutting off our negative data!
 
 ---
 
 ## 📊 Model Performance
-* **Accuracy (98%):** Overall correct predictions across both normal and anomaly samples.
-* **Precision (90%):** Out of all flagged alerts, 9 out of 10 are real anomalies with very few false alarms.
-* **Recall (97%):** The model successfully catches almost all actual behavioral anomalies hidden in the dataset.
-* **F1-Score (93%):** A stellar balance between precision and recall, proving our reconstruction error threshold is well-tuned.
+* **Accuracy (98%):** 
+* **Precision (90%):** 
+* **Recall (97%):** 
+* **F1-Score (93%):**
+Performance Summary: The model achieves 98% accuracy in mapping correct bandwidth distributions alongside a 90% precision and 97% recall, resulting in a 93% F1-score that effectively minimizes false alarms while catching real anomalies.
 
+Practical Impact: This balanced performance allows the autoencoder to reliably identify when a network behaves unfairly by assigning the wrong bandwidth for a given signal strength.
 ---
 
 ## 📚 Publication & Article
